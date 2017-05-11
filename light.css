@@ -1,0 +1,43 @@
+/*
+Light theme for The Lounge.
+
+Installation instructions can be found here
+https://thelounge.github.io/docs/server/configuration.html#theme
+
+Author: Bews
+GitHub: https://github.com/bews/lounge-light
+*/
+
+body { background: #4D5250; }
+
+#chat .self .text { color: #222; }
+#chat .time { color: #CCC !important; }
+
+#chat .chat, #chat .sidebar { top: 48px !important; }
+#chat .msg  { border-top: 1px dotted #E5E5E5; }
+#chat .msg.self + .msg { border-top: 1px dotted rgb(17,204,186); }
+#chat .msg.highlight + .msg { border-top: 1px dotted rgb(255,100,100); }
+
+#chat .msg.self + #chat .msg,
+#chat .date-marker + .msg,
+#chat .unread-marker + .msg,
+#chat .msg + .toggle,
+#chat .date-marker-container + .msg {
+	border-top: none !important;
+}
+
+#chat .names { margin-top: -10px; }
+
+#chat .user-mode:before {
+	border-bottom: none;
+	margin-bottom: 0;
+	border-top: 1px solid #eee;
+	margin-top: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical { background: rgba(0,0,0,0.2); }
+
+#chat a { color: #50a656; }
+
+#sidebar .chan:before { display: none; }
+#sidebar .chan, #sidebar .chan-placeholder { padding: 6px 10px 8px 10px; }
