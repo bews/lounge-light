@@ -8,15 +8,20 @@ Author: Bews
 GitHub: https://github.com/bews/lounge-light
 */
 
-body { background: #4D5250; }
+body { background: #4d5250; }
 
 #chat .self .text { color: #222; }
-#chat .time { color: #CCC !important; }
+#chat .time { color: #ccc !important; }
 
-#chat .chat, #chat .sidebar { top: 48px !important; }
-#chat .msg  { border-top: 1px dotted #E5E5E5; }
-#chat .msg.self + .msg { border-top: 1px dotted rgb(17,204,186); }
-#chat .msg.highlight + .msg { border-top: 1px dotted rgb(255,100,100); }
+#sidebar .chan:first-child { color: #4fe5ff; }
+#sidebar .chan:first-child:hover,
+#sidebar .chan:first-child.active { color: #fff; }
+
+#chat .chat,
+#chat .sidebar { top: 48px !important; }
+#chat .msg { border-top: 1px solid #f6f6f6; }
+#chat .msg.self + .msg { border-top: 1px solid rgb(104, 222, 211); }
+#chat .msg.highlight + .msg { border-top: 1px solid rgb(255,120,120); }
 
 #chat .msg.self + #chat .msg,
 #chat .date-marker + .msg,
@@ -26,7 +31,7 @@ body { background: #4D5250; }
 	border-top: none !important;
 }
 
-#chat .names { margin-top: -10px; }
+#chat .names > div:first-child { margin-top: -10px; }
 
 #chat .user-mode:before {
 	border-bottom: none;
@@ -35,9 +40,14 @@ body { background: #4D5250; }
 	margin-top: 10px;
 }
 
-::-webkit-scrollbar-thumb:vertical { background: rgba(0,0,0,0.2); }
+::-webkit-scrollbar-thumb:vertical { background: rgba(0, 0, 0, .2); }
 
-#chat a { color: #50a656; }
+#chat a { color: #03a9f4; }
 
 #sidebar .chan:before { display: none; }
-#sidebar .chan, #sidebar .chan-placeholder { padding: 6px 10px 8px 10px; }
+
+#sidebar .chan,
+#sidebar .chan-placeholder { padding: 6px 10px 8px 10px; }
+
+#chat .action .text { color: #f39c12; }
+#chat .topic .text { color: #009300; }
