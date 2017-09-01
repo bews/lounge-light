@@ -17,7 +17,7 @@ body { background: rgb(68, 70, 68); }
 #chat .self .text { color: #222; }
 #chat .time { color: #ccc !important; }
 
-#sidebar .chan:first-child { color: #4fe5ff; }
+#sidebar .chan:first-child { color: #4fd5ff; }
 #sidebar .chan:first-child:hover,
 #sidebar .chan:first-child.active { color: #fff; }
 
